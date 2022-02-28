@@ -1,0 +1,186 @@
+/*@import url(https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap);*/
+body{
+  color: aliceblue;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  background-image: url(pexels-tom-swinnen-1309766.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  opacity: 1;
+}
+
+title {
+
+  color: gray;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  font-size: medium;
+
+}
+.med{
+  font-family: 'Ubuntu', sans-serif;
+  display: block;
+  width: 47%;
+  margin: -56px 466px;
+
+}
+.right{
+  font-family: 'Ubuntu', sans-serif;
+  position: absolute;
+  right: 34px;
+  top: 40px;
+  display: inline-block;
+}
+.navbar {
+  pointer-events: stroke;
+  display: table-row;
+  font-size: 17px;
+  background-color:none;
+}
+.navbar li{
+  display: inline-block; 
+}
+.navbar li a{
+    padding: 8px 20px;
+    text-decoration: none;
+    color:rgba(243, 243, 243, 0.986);
+}
+.navbar li a:hover{
+  text-decoration: underline;
+}
+
+button{
+  pointer-events: stroke;
+  margin: 0px 6px;
+  font-size: 18px; 
+  color: bisque; 
+  background-color:transparent;
+  position: relative;
+  border: none;
+  border-radius: 12px;
+  transition: .4s ease-in;
+  z-index: 1;
+   
+}
+button::before,button::after{
+  position: absolute;
+  content: "";
+  z-index: -1;
+}
+.btn:hover{
+  background: #ff96ad;
+  box-shadow: 0 0 5px #ff96ad,0 0 25px #ff96ad, 0 0 50px #ff96ad,0 0 200px #ff96ad;
+}
+.Main{
+  color: whitesmoke;
+  font-size: 26px;
+  margin: 188px 184px;
+  text-align: center;
+ /* border: 5px solid magenta;*/
+}
+
+.btn1{
+  pointer-events: stroke;
+  margin:8px -23px -115px -228px;
+  color: black;
+  background-color: blueviolet;
+  width: 131px;
+  height: 37px;
+}
+.btn1:hover{
+   background-color: white;
+}
+.btn2{
+  pointer-events: stroke;
+  margin:40px -215px -21px 118px;
+  color: black;
+  background-color: blueviolet;
+  width: 131px;
+  height: 37px;
+}
+.btn2:hover{
+   background-color: white;
+}
+/* cards*/
+
+
+.container {
+  width: 90%;
+  margin: 50px auto;
+}
+.heading {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-flow: wrap;
+}
+
+.card {
+  width: 20%;
+  background: #fff;
+  border: 1px solid rgb(255, 17, 17);
+  margin-bottom: 50px;
+  transition: 0.3s;
+}
+
+.card-header {
+  text-align: center;
+  padding: 50px 10px;
+  background: linear-gradient(to right, #d015ff, #d015ff);
+  color: #fff;
+}
+
+.card-body {
+  color:black;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(184, 201, 238);
+}
+
+.card-body .btn {
+  display: block;
+  color: rgb(224, 25, 231);
+  text-align: center;
+  background: linear-gradient(to right,#d015ff, #d015ff);
+  margin-top: 30px;
+  text-decoration: blueviolet;
+  padding: 10px 5px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 1000px) {
+  .card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .container {
+    width: 100%;
+  }
+
+  .heading {
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  .card {
+    width: 80%;
+  }
+}
+.btn3{
+  color: #d015ff;
+}
+.footer{
+  color: black;
+  background-color: white;
+}
